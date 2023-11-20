@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InstalLog Project="A.G.I.S. - PUBLICNET" Build_date="17/11/2023 4:34:39 PM">
+  <Files>
+    <Directory Path="C:\Users\Oda\Games\Epic Games\Games\Cyberpunk2077\archive">
+      <Directory Path="C:\Users\Oda\Games\Epic Games\Games\Cyberpunk2077\archive\pc">
+        <Directory Path="C:\Users\Oda\Games\Epic Games\Games\Cyberpunk2077\archive\pc\mod">
+          <file>C:\Users\Oda\Games\Epic Games\Games\Cyberpunk2077\archive\pc\mod\A.G.I.S. - PUBLICNET.archive</file>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Files>
+</InstalLog>

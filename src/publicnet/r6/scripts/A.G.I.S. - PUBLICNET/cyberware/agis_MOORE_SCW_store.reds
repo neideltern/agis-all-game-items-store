@@ -1,0 +1,15 @@
+import Agis.Localisation.*
+
+@addMethod(gameuiInGameMenuGameController)
+protected cb func RegisterAGISMOORESCWStore(event: ref<VirtualShopRegistration>) -> Bool {
+  event.AddStore(
+    n"AGISMOORESCW",
+    agisName().moore,
+    ["Items.AdvancedAgileJointsCommon", "Items.AdvancedBionicJointsCommon", "Items.AdvancedBoneMarrowCellsCommon", "Items.AdvancedCompilingSkeletonCommon", "Items.AdvancedDenseMarrowCommon", "Items.AdvancedNoPainNoGainCommon", "Items.AdvancedPainDistributorCommon", "Items.AdvancedRapidMuscleNurishCommon", "Items.AdvancedT1000Common", "Items.AdvancedTitaniumInfusedBonesCommon", "Items.AdvancedAgileJointsUncommon", "Items.AdvancedBionicJointsUncommon", "Items.AdvancedBoneMarrowCellsUncommon", "Items.AdvancedCompilingSkeletonUncommon", "Items.AdvancedDenseMarrowUncommon", "Items.AdvancedNoPainNoGainUncommon", "Items.AdvancedPainDistributorUncommon", "Items.AdvancedRapidMuscleNurishUncommon", "Items.AdvancedT1000Uncommon", "Items.AdvancedTitaniumInfusedBonesUncommon", "Items.AdvancedAgileJointsRare", "Items.AdvancedBionicJointsRare", "Items.AdvancedBoneMarrowCellsRare", "Items.AdvancedCompilingSkeletonRare", "Items.AdvancedDenseMarrowRare", "Items.AdvancedNoPainNoGainRare", "Items.AdvancedPainDistributorRare", "Items.AdvancedRapidMuscleNurishRare", "Items.AdvancedT1000Rare", "Items.AdvancedTitaniumInfusedBonesRare", "Items.AdvancedAgileJointsEpic", "Items.AdvancedBionicJointsEpic", "Items.AdvancedBoneMarrowCellsEpic", "Items.AdvancedCompilingSkeletonEpic", "Items.AdvancedDenseMarrowEpic", "Items.AdvancedEndoskeletonEpic", "Items.AdvancedNoPainNoGainEpic", "Items.AdvancedPainDistributorEpic", "Items.AdvancedRapidMuscleNurishEpic", "Items.AdvancedT1000Epic", "Items.AdvancedTitaniumInfusedBonesEpic", "Items.AdvancedAgileJointsLegendary", "Items.AdvancedBionicJointsLegendary", "Items.AdvancedBoneMarrowCellsLegendary", "Items.AdvancedCompilingSkeletonLegendary", "Items.AdvancedDenseMarrowLegendary", "Items.AdvancedEndoskeletonLegendary", "Items.AdvancedNoPainNoGain_Legendary", "Items.AdvancedPainDistributorLegendary", "Items.AdvancedRapidMuscleNurishLegendary", "Items.AdvancedT1000Legendary", "Items.AdvancedTitaniumInfusedBonesLegendary"],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    r"base/gameplay/gui/agis-pn_store.inkatlas",
+    n"pn_moore",
+    ["Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Uncommon", "Rare", "Rare", "Rare", "Rare", "Rare", "Rare", "Rare", "Rare", "Rare", "Rare", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary"],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  );
+}

@@ -1,0 +1,15 @@
+import Agis.Localisation.*
+
+@addMethod(gameuiInGameMenuGameController)
+protected cb func RegisterAGISALLFOODSFOODStore(event: ref<VirtualShopRegistration>) -> Bool {
+  event.AddStore(
+    n"AGISALLFOODSFOOD",
+    agisName().allfoods,
+    ["Items.GoodQualityFood1", "Items.GoodQualityFood10", "Items.GoodQualityFood11", "Items.GoodQualityFood12", "Items.GoodQualityFood13", "Items.GoodQualityFood2", "Items.GoodQualityFood3", "Items.GoodQualityFood4", "Items.GoodQualityFood5", "Items.GoodQualityFood6", "Items.GoodQualityFood7", "Items.GoodQualityFood8", "Items.GoodQualityFood9", "Items.LowQualityFood1", "Items.LowQualityFood10", "Items.LowQualityFood12", "Items.LowQualityFood13", "Items.LowQualityFood14", "Items.LowQualityFood15", "Items.LowQualityFood16", "Items.LowQualityFood17", "Items.LowQualityFood18", "Items.LowQualityFood19", "Items.LowQualityFood20", "Items.LowQualityFood21", "Items.LowQualityFood22", "Items.LowQualityFood23", "Items.LowQualityFood24", "Items.LowQualityFood25", "Items.LowQualityFood26", "Items.LowQualityFood27", "Items.LowQualityFood28", "Items.LowQualityFood3", "Items.LowQualityFood5", "Items.LowQualityFood6", "Items.LowQualityFood7", "Items.LowQualityFood8", "Items.LowQualityFood9", "Items.MediumQualityFood1", "Items.MediumQualityFood10", "Items.MediumQualityFood11", "Items.MediumQualityFood12", "Items.MediumQualityFood13", "Items.MediumQualityFood14", "Items.MediumQualityFood15", "Items.MediumQualityFood16", "Items.MediumQualityFood17", "Items.MediumQualityFood18", "Items.MediumQualityFood19", "Items.MediumQualityFood2", "Items.MediumQualityFood20", "Items.MediumQualityFood3", "Items.MediumQualityFood4", "Items.MediumQualityFood5", "Items.MediumQualityFood6", "Items.MediumQualityFood7", "Items.MediumQualityFood8", "Items.MediumQualityFood9", "Items.NomadsFood1", "Items.NomadsFood2", "Items.LowQualityFood11"],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    r"base/gameplay/gui/agis-pn_store.inkatlas",
+    n"pn_allfoods",
+    ["Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common", "Common"],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  );
+}
