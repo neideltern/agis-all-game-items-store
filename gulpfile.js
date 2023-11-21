@@ -59,6 +59,8 @@ class Mod {
 
 const publicnet = new Mod("A.G.I.S. - PUBLICNET")
 const blackwall = new Mod("A.G.I.S. - BLACKWALL")
+const localisationTemplate = new Mod("A.G.I.S. - LOCALISATION TEMPLATE")
+
 
 const buildMods = gulp.series(
     publicnet.buildMod.bind(publicnet),
@@ -67,7 +69,8 @@ const buildMods = gulp.series(
 
 const releaseMods = gulp.series(
     publicnet.releaseMod.bind(publicnet),
-    blackwall.releaseMod.bind(blackwall)
+    blackwall.releaseMod.bind(blackwall),
+    localisationTemplate.releaseMod.bind(localisationTemplate)
 );
 
 gulp.task('build', buildMods);
