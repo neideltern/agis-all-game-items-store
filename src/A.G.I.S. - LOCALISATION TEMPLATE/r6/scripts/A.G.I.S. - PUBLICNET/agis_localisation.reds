@@ -2,7 +2,7 @@
 
 // Attention to localization authors! 
 // Please adhere to the following guidelines when creating your own localization:
-// 1. DON'T translate indicators; This may disrupt the ordering.
+// 1. DON'T translate tags; This may disrupt the ordering.
 // 2. DON'T translate store names; Proper nouns shouldn't be translated.
 // 3. DON'T change the original meaning of the store descriptions.
 

@@ -36,7 +36,7 @@ public class AgisStoreNames {
     let rostovic: String = "r/ Rostovic - Ranged Recipes";
     // weapons
     let amendment: String = "w/ 2nd Amendment - Ranged Weapons";
-    let budgetarms: String = "w/Budget Arms - Ammo Store";
+    let budgetarms: String = "w/ Budget Arms - Ammo Store";
     let darra: String = "w/ Darra PLC. - Weapon Mods";
     let kendachi: String = "w/ Kendachi - Melee Weapons";
     let tsunami: String = "w/ Tsunami - Weapon Modules";

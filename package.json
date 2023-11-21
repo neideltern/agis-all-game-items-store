@@ -1,0 +1,21 @@
+{
+  "name": "agis-all-game-items-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/neideltern/agis-all-game-items-store"
+  },
+  "author": "neideltern",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^6.0.0"
+  }
+}
