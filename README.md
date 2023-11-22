@@ -1,5 +1,5 @@
 # A.G.I.S. - All Game Items Store (Virtual Atelier)
-![cover image](assets\nexus\agis_cover.jpg)
+![cover image](assets/nexus/agis_cover.jpg)
 ## Description
 A collection of Virtual Atelier stores containing (almost) all in-game items, organized into product groups, and presented as immersive websites of brands and corpos within Cyberpunk 2077 universe.
 
