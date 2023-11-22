@@ -39,7 +39,7 @@ public class AgisStoreNames {
     let eji: String = "o/ EJI of Japan - ";               // Default: Headwear Store
     let iconamerica: String = "o/ ICON America - ";       // Default: Outerwear Store
     let jinguji: String = "o/ JINGUJI - ";                // Default: Signature Store
-    let maxiwear: String = "o/MAXIWEAR - ";               // Default: Legwear Store
+    let maxiwear: String = "o/ MAXIWEAR - ";               // Default: Legwear Store
     let ststore: String = "o/ 4st STORE - ";              // Default: Sneakers Store
     let tanaka: String = "o/ TANAKA - ";                  // Default: Face Accesories Store
     // recipes
@@ -51,7 +51,7 @@ public class AgisStoreNames {
     let rostovic: String = "r/ Rostovic - ";              // Default: Ranged Recipes
     // weapons
     let amendment: String = "w/ 2nd Amendment - ";        // Default: Ranged Weapons
-    let budgetarms: String = "w/Budget Arms - ";          // Default: Ammo Store
+    let budgetarms: String = "w/ Budget Arms - ";          // Default: Ammo Store
     let darra: String = "w/ Darra PLC. - ";               // Default: Weapon Mods
     let kendachi: String = "w/ Kendachi - ";              // Default: Melee Weapons
     let tsunami: String = "w/ Tsunami - ";                // Default: Weapon Modules
