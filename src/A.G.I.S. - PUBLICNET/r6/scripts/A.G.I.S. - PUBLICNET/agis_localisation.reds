@@ -24,7 +24,7 @@ public class AgisStoreNames {
     let eji: String = "o/ EJI of Japan - Headwear Store";
     let iconamerica: String = "o/ ICON America - Outerwear Store";
     let jinguji: String = "o/ JINGUJI - Signature Store";
-    let maxiwear: String = "o/MAXIWEAR - Legwear Store";
+    let maxiwear: String = "o/ MAXIWEAR - Legwear Store";
     let ststore: String = "o/ 4st STORE - Sneakers Store";
     let tanaka: String = "o/ TANAKA - Face Accesories Store";
     // recipes
