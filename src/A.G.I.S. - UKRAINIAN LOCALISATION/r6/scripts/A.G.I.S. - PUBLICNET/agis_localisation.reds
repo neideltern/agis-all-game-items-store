@@ -4,46 +4,46 @@ module Agis.Localisation
 
 public class AgisStoreNames {
     // cyberware
-    let arasaka: String = "c/ Arasaka - ";                // Default: Arms Cyberware
-    let biotechnica: String = "c/ Biotechnica - ";        // Default: Cardio Cyberware
-    let cytech: String = "c/ Cytech - ";                  // Default: Legs Cyberware
-    let datainc: String = "c/ Data inc. - ";              // Default: Cyber Decks Software
-    let dynalar: String = "c/ Dynalar - ";                // Default: Dermal Cyberware
-    let fuyutsuki: String = "c/ Fuyutsuki - ";            // Default: Cortex Cyberware
-    let kangtao: String = "c/ Kangtao - ";                // Default: Hands Cyberware
-    let kiroshi: String = "c/ Kiroshi Opticals - ";       // Default: Face Cyberware
-    let moore: String = "c/ MOORE - ";                    // Default: Skeleton Cyberware
-    let raven: String = "c/ Raven - ";                    // Default: Nervous System Cyberware
-    let zetatech: String = "c/ Zetatech - ";              // Default: Operating System
+    let arasaka: String = "c/ Arasaka - Імпланти Рук";
+    let biotechnica: String = "c/ Biotechnica - Імпланти Серця";
+    let cytech: String = "c/ Cytech - Імпланти Ніг";
+    let datainc: String = "c/ Data inc. - ПЗ Для Кібердек";
+    let dynalar: String = "c/ Dynalar - Імпланти Шкіри";
+    let fuyutsuki: String = "c/ Fuyutsuki - Імпланти Чола";
+    let kangtao: String = "c/ Kangtao - Імпланти рук";
+    let kiroshi: String = "c/ Kiroshi Opticals - Імпланти Лиця";
+    let moore: String = "c/ MOORE - Імпланти Скелету";
+    let raven: String = "c/ Raven - Імпланти Нервової Системи";
+    let zetatech: String = "c/ Zetatech - Операційні Системи";
     // misk
-    let afterlife: String = "m/ Afterlife Bar - ";        // Default: Drinks & Cocktails
-    let allfoods: String = "m/ All Foods, Inc. - ";       // Default: Online Store
-    let dtr: String = "m/ DT&R - ";                       // Default: Goods Shipment Central
-    let softsys: String = "m/ Softsys - ";                // Default: Spare Parts Store
-    let traumateam: String = "m/ Trauma Team - ";         // Default: Drugstore Online
+    let afterlife: String = "m/ Afterlife Bar - Напої Та Коктейлі";
+    let allfoods: String = "m/ All Foods, Inc. - Онлайн Магазин Їжі";
+    let dtr: String = "m/ DT&R - Центр Відправлень";
+    let softsys: String = "m/ Softsys - Магазин Запчастин";
+    let traumateam: String = "m/ Trauma Team - Онлайн Аптека";
     // outfit
-    let avante: String = "o/ Avante de Italia - ";        // Default: Innerwear Store
-    let eji: String = "o/ EJI of Japan - ";               // Default: Headwear Store
-    let iconamerica: String = "o/ ICON America - ";       // Default: Outerwear Store
-    let jinguji: String = "o/ JINGUJI - ";                // Default: Signature Store
-    let maxiwear: String = "o/MAXIWEAR - ";               // Default: Legwear Store
-    let ststore: String = "o/ 4st STORE - ";              // Default: Sneakers Store
-    let tanaka: String = "o/ TANAKA - ";                  // Default: Face Accesories Store
+    let avante: String = "o/ Avante de Italia - Внутрішній Одяг";
+    let eji: String = "o/ EJI of Japan - Магазин Капелюхів";
+    let iconamerica: String = "o/ ICON America - Верхній Одяг";
+    let jinguji: String = "o/ JINGUJI - Магазин Знакового Одягу";
+    let maxiwear: String = "o/MAXIWEAR - Магазин Штанів";
+    let ststore: String = "o/ 4st STORE - Магазин Кросівок";
+    let tanaka: String = "o/ TANAKA - Магазин Аксесуарів Лиця";
     // recipes
-    let constitutional: String = "r/ Constitutional - ";  // Default: Ammo Recipes
-    let dakai: String = "r/ Dakai - ";                    // Default: Melee Recipes
-    let edgenet: String = "r/ EdgeNet - ";                // Default: Open Source Software
-    let medtech: String = "r/ Medtech - ";                // Default: Meds Prescriptions
-    let nokota: String = "r/ Nokota - ";                  // Default: Weapon Mods Recipes
-    let rostovic: String = "r/ Rostovic - ";              // Default: Ranged Recipes
+    let constitutional: String = "r/ Constitutional - Схеми Амуніції";
+    let dakai: String = "r/ Dakai - Схеми Холодної Зброї";                  
+    let edgenet: String = "r/ EdgeNet - ПЗ З Відкритим Кодом";
+    let medtech: String = "r/ Medtech - Рецепти Ліків";
+    let nokota: String = "r/ Nokota - Схеми Модів До Зброї";
+    let rostovic: String = "r/ Rostovic - Схеми Стрілецької Зброї";
     // weapons
-    let amendment: String = "w/ 2nd Amendment - ";        // Default: Ranged Weapons
-    let budgetarms: String = "w/Budget Arms - ";          // Default: Ammo Store
-    let darra: String = "w/ Darra PLC. - ";               // Default: Weapon Mods
-    let kendachi: String = "w/ Kendachi - ";              // Default: Melee Weapons
-    let tsunami: String = "w/ Tsunami - ";                // Default: Weapon Modules
+    let amendment: String = "w/ 2nd Amendment - Стрілецька Зброя";
+    let budgetarms: String = "w/Budget Arms - Магазин Амуніції";
+    let darra: String = "w/ Darra PLC. - Моди До Зброї";
+    let kendachi: String = "w/ Kendachi - Холодна Зброя";
+    let tsunami: String = "w/ Tsunami - Модулі До Зброї";
 }
 
 public func agisName() -> ref<AgisStoreNames> {
     return new AgisStoreNames();
-}   
+}
