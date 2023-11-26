@@ -1,77 +1,95 @@
-import gulp from "gulp";
-import zip from "gulp-zip";
+import gulp from 'gulp';
 import { deleteAsync } from "del";
+import prompt from 'gulp-prompt';
+import zip from "gulp-zip";
+import fs from "fs";
 
-class Mod { 
+const scriptsFolder = "./src";
+const archiveFolder = "./wolvenkit";
+const releaseFolder = "./release"
+const buildFolder = "/Users/Oda/Games/Epic Games/Games/Cyberpunk2077";
 
+class Mod {
     constructor(modName){
         this.modName = modName;
-        this.buildFolder = '/Users/Oda/Games/Epic Games/Games/Cyberpunk2077';
-        this.releaseFolder = './release';
-
-        this.source = {
-            scripts: `./src/${this.modName}`,
-            archive: `./wolvenkit/${this.modName}/packed`,
+    
+        this.sourcePaths = {
+            scripts: `${scriptsFolder}/${this.modName}`,
+            archive: `${archiveFolder}/${this.modName}/packed`,
         }
-
-        this.build = {
-            archive: `${this.buildFolder}/archive/pc/mod/${this.modName}.archive`,
-            script: `${this.buildFolder}/r6/scripts/${this.modName}`,
+    
+        this.buildPaths = {
+            archive: `${buildFolder}/archive/pc/mod/${this.modName}.archive`,
+            script: `${buildFolder}/r6/scripts/${this.modName}`,
         }
     }
 
     #copy() {
-        const dirs = [
-            `${this.source.scripts}/**/*`,
-            `${this.source.archive}/**/*`
-        ]
-        return gulp.src(dirs)
-            .pipe(gulp.dest(this.buildFolder));
+        return gulp.src(Object.values(this.sourcePaths).map(path => `${path}/**/*.*`))
+            .pipe(gulp.dest(buildFolder));
     }
 
-    #clear() {
-        return deleteAsync([this.build.archive, this.build.script], { force: true });
+    remove() {
+        return deleteAsync(Object.values(this.buildPaths), { force: true });
+    }
+    
+    async build(){
+        await this.remove();
+        return this.#copy();
     }
 
-    #release() {
-        const formattedName = this.modName.toLowerCase().replace(/\./g, '').replace(/[\W_]+/g, '_');
-        const dirs = [
-            `${this.source.scripts}/**/*`,
-            `${this.source.archive}/**/*`
-        ];
-        return gulp.src(dirs)
+    release(ver) {
+        const formattedName = this.modName.toLowerCase().replace(/\./g, '').replace(/[\W_]+/g, '_')+`_v${ver}`;
+        return gulp.src(Object.values(this.sourcePaths).map(path => `${path}/**/*.*`))
             .pipe(zip(`${formattedName}.zip`))
-            .pipe(gulp.dest(this.releaseFolder));
-    }
-
-    buildMod(done) {
-        this.#clear()
-            .then(() => {
-                this.#copy()
-                    .on('end', done);
-            });
-    }
-
-    releaseMod(done) {
-        this.#release().on('end', done);
+            .pipe(gulp.dest(releaseFolder));
     }
 }
 
-const publicnet = new Mod("A.G.I.S. - PUBLICNET")
-const blackwall = new Mod("A.G.I.S. - BLACKWALL")
-const localisationTemplate = new Mod("A.G.I.S. - LOCALISATION TEMPLATE")
+// get all mod folders 
 
+const mods = fs.readdirSync(scriptsFolder)
+    .filter(item => fs.statSync(`${scriptsFolder}/${item}`).isDirectory())
+    .map(folderName => new Mod(folderName));
 
-const buildMods = gulp.series(
-    publicnet.buildMod.bind(publicnet),
-    blackwall.buildMod.bind(blackwall)
-);
+// build and remove tasks
 
-const releaseMods = gulp.series(
-    publicnet.releaseMod.bind(publicnet),
-    blackwall.releaseMod.bind(blackwall),
-    localisationTemplate.releaseMod.bind(localisationTemplate)
-);
+function processMods(action) {
+    return gulp.src('.')
+        .pipe(prompt.prompt({
+            type: 'checkbox',
+            name: 'mods',
+            message: `Select mods to ${action}`,
+            choices: mods.map(mod => mod.modName),
+        }, function (res) {
+            const selectedMods = mods.filter(mod => res.mods.includes(mod.modName));
+            selectedMods.forEach(async mod => await mod[action]());
+        }));
+}
 
-gulp.task('build', buildMods);
-gulp.task('release', releaseMods);
+gulp.task('build', () => processMods('build'));
+gulp.task('remove', () => processMods('remove'));
+
+// release task 
+
+gulp.task('release', function () {
+    return gulp.src('.')
+        .pipe(prompt.prompt({
+            type: 'list',
+            name: 'modName',
+            message: 'Select mod to release',
+            choices: mods.map(mod => mod.modName),
+        }, function (res) {
+            const selectedMod = mods.find(mod => mod.modName === res.modName);
+            if (selectedMod) {
+                gulp.src('.')
+                    .pipe(prompt.prompt({
+                        type: 'input',
+                        name: 'version',
+                        message: 'Enter version:',
+                    }, function (versionRes) {
+                        selectedMod.release(versionRes.version);
+                    }));
+            }
+        }));
+});

@@ -15,7 +15,9 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^7.1.0",
+    "fs": "^0.0.1-security",
     "gulp": "^4.0.2",
+    "gulp-prompt": "^1.2.0",
     "gulp-zip": "^6.0.0"
   }
 }
