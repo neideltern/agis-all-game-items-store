@@ -157,3 +157,11 @@ The economy of Cyberpunk 2077 is completely broken. Based on this, I made a comp
 | `x.` | `Ranged Weapons` | streetgear.wall |
 | `x.` | `Melee Weapons` | toranoyaiba.wall |
 | `x.` | `Quickhacks` | lojisyel.agwe.wall |
+
+## CREDITS
+
+### Thanks a lot to the authors whose work contributed to my release:
+
+* [DJ_Kovrik](https://www.nexusmods.com/users/100354) for [Virtual Atelier](https://www.nexusmods.com/cyberpunk2077/mods/2987) support
+* [Bartovalenza](https://www.nexusmods.com/cyberpunk2077/users/6172371) for [Categorized All-In-One Command List](https://www.nexusmods.com/cyberpunk2077/mods/521)
+* [Valency Graphics](https://www.valencygraphics.com/about) for [Cyberpunk 2077 Logos & Assets](https://www.valencygraphics.com/cyberpunk-2077)
