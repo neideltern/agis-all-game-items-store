@@ -27,6 +27,7 @@ public class AgisStoreNames {
     let maxiwear: String = "o/ MAXIWEAR - Legwear Store";
     let ststore: String = "o/ 4st STORE - Sneakers Store";
     let tanaka: String = "o/ TANAKA - Face Accesories Store";
+    let militech: String = "o/ MILITECH - Techwear Store";
     // recipes
     let constitutional: String = "r/ Constitutional - Ammo Recipes";
     let dakai: String = "r/ Dakai - Melee Recipes";

@@ -42,6 +42,7 @@ public class AgisStoreNames {
     let maxiwear: String = "o/ MAXIWEAR - ";               // Default: Legwear Store
     let ststore: String = "o/ 4st STORE - ";              // Default: Sneakers Store
     let tanaka: String = "o/ TANAKA - ";                  // Default: Face Accesories Store
+    let militech: String = "o/ MILITECH - ";              // Default: Techwear Store
     // recipes
     let constitutional: String = "r/ Constitutional - ";  // Default: Ammo Recipes
     let dakai: String = "r/ Dakai - ";                    // Default: Melee Recipes

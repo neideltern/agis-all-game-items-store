@@ -3,11 +3,11 @@ protected cb func RegisterAGISMAXTACSKILLBOOKSStore(event: ref<VirtualShopRegist
   event.AddStore(
     n"AGISMAXTACSKILLBOOKS",
     "x.maxtraining.wall",
-    ["Items.PerkPointSkillbook", "Items.Espionage_Skillbook", "Items.TechnicalAbilitySkill_Skillbook_Legendary", "Items.CoolSkill_Skillbook_Legendary", "Items.IntelligenceSkill_Skillbook_Legendary", "Items.ReflexesSkill_Skillbook_Legendary", "Items.BodySkill_Skillbook_Legendary", "Items.TechnicalAbilitySkill_Skillbook", "Items.CoolSkill_Skillbook", "Items.IntelligenceSkill_Skillbook", "Items.ReflexesSkill_Skillbook", "Items.BodySkill_Skillbook", "Items.AttributePointSkillbook", "Items.TechnicalSkillbook_Strong", "Items.CoolSkillbook_Strong", "Items.IntelligenceSkillbook_Strong", "Items.ReflexSkillbook_Strong", "Items.BodySkillbook_Strong"],
-    [61422, 63556, 61369, 63477, 63527, 63924, 60967, 45712, 46638, 45906, 46919, 47593, 122802, 47269, 46643, 46202, 47353, 47710],
+    ["Items.PerkPointSkillbook", "Items.Espionage_Skillbook", "Items.TechnicalAbilitySkill_Skillbook_Legendary", "Items.CoolSkill_Skillbook_Legendary", "Items.IntelligenceSkill_Skillbook_Legendary", "Items.ReflexesSkill_Skillbook_Legendary", "Items.BodySkill_Skillbook_Legendary", "Items.CWCapacityPermaReward_Legendary", "Items.TechnicalAbilitySkill_Skillbook", "Items.CoolSkill_Skillbook", "Items.IntelligenceSkill_Skillbook", "Items.ReflexesSkill_Skillbook", "Items.BodySkill_Skillbook", "Items.AttributePointSkillbook", "Items.TechnicalSkillbook_Strong", "Items.CoolSkillbook_Strong", "Items.IntelligenceSkillbook_Strong", "Items.ReflexSkillbook_Strong", "Items.BodySkillbook_Strong", "Items.PermanentHealthFood", "Items.AirdropPermaReward", "Items.PermanentStaminaRegenFood", "Items.PermanentMemoryRegenFood", "Items.CWCapacityPermaReward_Epic", "Items.CWCapacityPermaReward_Rare", "Items.CWCapacityPermaReward_Uncommon"],
+    [60615, 62944, 57983, 62362, 60353, 62070, 60291, 63665, 47796, 43849, 43310, 46255, 45111, 126743, 47562, 46126, 46094, 45573, 43700, 46451, 43740, 43766, 45691, 43659, 28975, 22969],
     r"base/gameplay/gui/agis-bw_store.inkatlas",
     n"bw_maxtac",
-    ["Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic"],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    ["Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Legendary", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Epic", "Rare", "Uncommon"],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
   );
 }

@@ -1,4 +1,4 @@
-// UKRAINIAN LOCALISATION FOR A.G.I.S. - PUBLICNET
+// UKRAINIAN LOCALISATION FOR A.G.I.S. - PUBLICNET (v1.2.1)
 
 module Agis.Localisation
 
@@ -29,6 +29,7 @@ public class AgisStoreNames {
     let maxiwear: String = "o/MAXIWEAR - Магазин Штанів";
     let ststore: String = "o/ 4st STORE - Магазин Кросівок";
     let tanaka: String = "o/ TANAKA - Магазин Аксесуарів Лиця";
+    let militech: String = "o/ MILITECH - Технічний Одяг";
     // recipes
     let constitutional: String = "r/ Constitutional - Схеми Амуніції";
     let dakai: String = "r/ Dakai - Схеми Холодної Зброї";                  
