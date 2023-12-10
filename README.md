@@ -83,10 +83,6 @@ The economy of Cyberpunk 2077 is completely broken. Based on this, I made a comp
 | `r/` | `Meds and Buffs` | ~16000 €$ | ~12000 €$ | ~8000 €$ | ~4000 €$ | ~2000 €$ |
 | `r/` | `Weapon Mods` | ~16000 €$ | ~12000 €$ | ~8000 €$ | ~4000 €$ | None |
 
-### BLACKWALL 
-
-
-
 ## Stores list
 
 ### PUBLICNET
@@ -121,6 +117,7 @@ The economy of Cyberpunk 2077 is completely broken. Based on this, I made a comp
 | `o/` | `Inner Torso` | Avante de Italia | Innerwear Store |
 | `o/` | `Head` | EJI of Japan | Headwear Store |
 | `o/` | `Outer Torso` | ICON America | Outerwear Store |
+| `o/` | `Outer Torso` | MILITECH | Techwear Store |
 | `o/` | `Special` | JINGUJI | Signature Store |
 | `o/` | `Legs` | MAXIWEAR | Legwear Store |
 | `o/` | `Feet` | 4st STORE | Sneakers Store |
